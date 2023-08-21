@@ -1,0 +1,45 @@
+.product{
+     width: 100%;
+}
+
+.cart-top {
+    margin-top: 80px;
+}
+.product-item{
+    overflow-x: scroll;
+}
+.item{
+    margin: 20px 30px;
+    text-align: center;
+}
+
+.item img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 0 10px 0;
+}
+
+.item h6{
+    font-weight: 500 !important;
+    font-size: 18px !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (max-width:600px) {
+    .item{
+        margin: 10px 15px;
+
+        h6{
+            font-size: 14px !important;
+        }
+    }
+
+    .item img{
+        width: 80px;
+        height: 80px;}
+}

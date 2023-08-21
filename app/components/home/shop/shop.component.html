@@ -1,0 +1,26 @@
+
+<div class="shop-container"  data-aos="fade-up"
+data-aos-anchor-placement="top-bottom">
+   <div class="d-flex shop">
+    <div class="shop-1">
+        <img src="../../../../assets/bg/Store_image.jpg" alt="" class="img-fluid">
+    </div>
+    <div class="shop-2">
+        <h2>Come say Hi!</h2>
+        <h4>We have 14 stores across India. <br>Plus,we deliver worldwide.</h4>
+        <a href="/story">FIND OUR STORE</a>
+    </div>
+   </div>
+
+   <hr>
+
+   <div class="press">
+   <h3>IN THE PRESS</h3>
+   <div class="d-flex p-container">
+    <div class="press-item" *ngFor="let press of pressStr">
+        <img src="{{ press.img }}" alt="">
+        <h5>{{ press.title }}</h5>
+    </div>
+   </div>
+   </div>
+</div>

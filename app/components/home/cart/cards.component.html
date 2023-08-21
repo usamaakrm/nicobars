@@ -1,0 +1,125 @@
+<div class="products">
+    <h2>Flash Sale On! </h2>
+
+
+    <div class="cart-top flex">
+    
+        <div class="d-flex filter-product">
+                <div class="item ">
+                    <a (click)="filter('')">
+                        <h4 class="actives">New Arrivals</h4>
+                    </a>
+                </div>
+                <div class="item">
+                    <a (click)="filter('women')">
+                        <h4>Women</h4>
+                    </a>
+                </div>
+                <div class="item">
+                    <a (click)="filter('men')">
+                        <h4>Men</h4>
+                    </a>
+                </div>
+                <div class="item">
+                    <a (click)="filter('decor')">
+                        <h4>Decors</h4>
+                    </a>
+                </div>
+                <div class="item">
+                    <a (click)="filter('kid')">
+                        <h4>kids</h4>
+                    </a>
+                </div>
+                <div class="item">
+                    <a (click)="filter('shoe')">
+                        <h4>Shoes</h4>
+                    </a>
+                </div>
+                <div class="item">
+                    <a (click)="filter('watch')">
+                        <h4>Watch</h4>
+                    </a>
+                </div>
+                <div class="item">
+                    <a (click)="filter('perfume')">
+                        <h4>Perfumes</h4>
+                    </a>
+                </div>
+        
+        </div>
+        
+    </div>
+    
+    <div>
+        <div class="row">
+            <!--  rhs = value   lhs = prop name -->
+            <ng-container class="d-flex card-item" *ngFor="let item of filterCategory | filter : searchKey: 'title' ">
+        
+                    <div class="cards" data-aos="fade-in"
+                data-aos-anchor-placement="top-bottom" data-aos-offset="200" data-aos-easing="ease-in-out"
+                data-aos-duration="1000"  [routerLink]="['/collections',item.id]">
+                    <div class="img-card">
+                        <img src="{{ item?.img }}" alt="">
+                    </div>
+                    <h5 class="description">{{ item?.title}}</h5>
+                    <p class="description">{{ item?.description }}</p>
+                    <div class="d-flex add-to-cart">
+                        <h6>{{ item?.price | currency:"INR" }}</h6>
+                        <img src="../../../../assets/icons/bag.png" alt="" (click)="addToCart(item)">
+                    </div>
+                </div>
+    
+            </ng-container>
+        </div>
+    </div>
+</div>
+<!-- story section -->
+<div class="shop">
+    <div class="shop-1" >
+        <h3 data-aos="fade-down" >A print tribute <br> to Cambodia!</h3>
+        <h4 data-aos="fade-down">We choose a mindful material library for a collection that's <br> with colors and prints that reference Combodia</h4>
+        <div class="btn-items d-flex" >
+            <button data-aos="fade-up" routerLink="/mens">SHOP SERENITY</button>
+            <button data-aos="fade-up" routerLink="/mens">SHOP MEN</button>
+        </div>
+    </div>
+
+
+    <div class="shop-2">
+        <h3>A Cambodian Story</h3>
+        <p>{{ subTitle }}</p>
+    </div>
+
+    <div class="shop-3 bg" >
+        <h3 data-aos="fade-left">Summertime joy!</h3 >
+        <p data-aos="fade-left">Pieces you'll reach for on hot days <br>and balmy nights</p>
+            <button data-aos="fade-left" routerLink="/womens">WOMEN</button> 
+    </div>
+
+    <div class="shop-4 center">
+        <h3>Best sellers you'll love</h3>
+        <div class="docor-item d-flex">
+            <div class="decor-card" *ngFor="let item of decorItem" data-aos="fade-right">
+                <img src="{{ item.img }}" alt="">
+                <div class="d-flex decors">
+                    <h4>{{ item.title }}</h4>
+                    <a routerLink="/decors">Shop now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shop-5 bg center">
+        <h3 data-aos="fade-down">Off the cuff</h3>
+        <!-- <img src="../../../../assets/bg/FF.jpeg" alt=""> -->
+        <h4 data-aos="fade-down">Kick off summer with a bang(le)</h4>
+        <div class="btn-items d-flex">
+            <button data-aos="fade-up" routerLink="/jewel">BANGLES & RINGS</button>
+            <button data-aos="fade-up" routerLink="/jewel">ALL JEWELLERY</button>
+        </div>
+    </div>
+
+</div>
+
+
+

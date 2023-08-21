@@ -1,0 +1,107 @@
+.shop-container{
+    padding: 50px 30px;
+}
+
+.shop-1 img{
+    width: 40rem;
+}
+
+.shop-2{
+    text-align-last: left;
+    align-items: center;
+    margin: auto;
+    
+}
+
+.shop-2 h2{
+    font-size: 30px;
+    color: rgb(214, 187, 119);
+}
+
+.shop-2 h4{
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.press{
+    text-align: center;
+    padding: 50px 10px;
+}
+
+.press h3{
+    font-family:  'Cormorant Garamond', serif;
+}
+
+.press img{
+    width: 200px;
+    object-fit: contain;
+}
+
+.p-container{
+    margin: 30px;
+    flex-flow: wrap ;
+    justify-content: space-between;
+}
+
+.press-container h5{
+    font-size: 5px;
+    width: 200px;
+    margin: 20px 0;
+}
+
+.press-item{
+    margin: 20px;
+    width: 170px;
+}
+
+.press-item h5{
+    color: gray;
+    text-align: left;
+    font-size: 15px;
+}
+
+@media (max-width: 600px) {
+    .shop{
+        flex-direction: column;
+    }
+
+    .shop-container{
+        padding: 50px auto;
+    }
+
+    .shop-1 img{
+        margin: 40px auto;
+    }
+
+    .press, .press-item,.p-container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .press{
+        padding: 30px auto;
+    }
+
+    .press h3{
+        font-size: 30px;
+        margin: 50px auto 20px auto;
+    }
+
+    .press-container h5{
+    width: 100%;
+    font-size: 10px;
+}
+
+.press-item{
+    width: 45%;
+    margin: 30px 5px;
+}
+
+.press-item img{
+    max-width: 150px;
+}
+
+.p-container{
+    justify-content: space-between;
+}
+}

@@ -1,0 +1,155 @@
+<div class="container">
+    <div class="row collections">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a routerLink="">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">collection</li>
+            </ol>
+          </nav>
+        
+        <div class="col-lg-6 collect-left" *ngIf="menuData">
+            <img src="{{ menuData[0]?.img }}" alt="" class="img-fluid" data-aos="fade-in" data-aos-easing="ease-in-out"
+          >
+        </div>
+
+        <div class="col-lg-6 collect-right mt-3" *ngIf="menuData" data-aos="fade-down">
+            <h3>  {{ menuData[0]?.title }}  </h3>
+            <p>   {{ menuData[0]?.description }}  </p>
+            <h4>  {{ menuData[0]?.price | currency:"INR" }} </h4>
+
+            <h5>  Inclusive Of All Taxes  </h5>
+            
+            <h6><span>Material:</span> 100% Organic Cotton Single Jersey</h6>
+            <div class="sizes">
+                <h6><span>Size:</span></h6>
+                <ul class="size d-flex" data-aos="fade-down">
+                     <li>XS</li>
+                     <li>S</li>
+                     <li>M</li>
+                     <li>L</li>
+                     <li>XL</li>
+                     <li>2XL</li>
+                     <li>3XL</li>
+                </ul>
+
+            <button class="btn btn-design" (click)="addToCart(menuData[0])">ADD TO BAG</button>
+
+            </div>
+           
+
+            <h5><img class="icon" src="../../../../assets/icons/return.svg" alt=""> 15 days Easy Returns</h5>
+
+                    <div class="details" data-aos="fade-down">
+                        <h6>Product details</h6>
+                        <ul>
+                            <li>Mindfully tailored in 100% organic cotton.</li>
+                            <li>It features a print of monkey hanging from a palm tree.</li>
+                            <li>For every day and beyond.</li>
+                            <li>Perfect to throw over jeans or a pair of shorts, and <br> layer under an unbuttoned shirt or wear as is.</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="care" data-aos="fade-down">
+                        <h6>COMPOSITION AND CARE</h6>
+                        <ul>
+                            <li>Gentle machine wash cold with similar colors.</li>
+                            <li>Do not bleach.</li>
+                            <li>Tumble dry low.</li>
+                            <li>Warm iron if needed.</li>
+                            <li>Do not iron on print.</li>
+                        </ul>
+                    </div>
+        </div>
+
+        <div class="items d-flex">
+            <div class="item-1" data-aos="fade-down">
+                <div class="explore mt-5" *ngIf="menuData">
+                    <h5>Explore by :</h5>
+                    <h6>
+                        <span>Category:</span>
+                        {{ menuData[0]?.category}} 
+                    </h6>
+                    <h6><span>Collection:</span>
+                        {{ menuData[0]?.title }} 
+                    </h6>
+                </div>
+    
+                <div class="contact mt-5" data-aos="fade-down">
+                    <h5>Have a question? We can help.</h5>
+                    <h6><span>Mon-Sat  -  9:30 AM TO 5:30 PM (IST)</span></h6>
+    
+                    <h6 class="mt-3">Call or WhatsApp us</h6>
+                    <h6><span>+91 9080695991</span></h6>
+    
+                    <h6 class="mt-3">Email us
+                        care@taghey.com</h6>
+                    <h6><span>or chat/DM us on our Instagram and Facebook page.</span></h6>
+    
+                </div>
+            </div>
+
+
+                <div class="item-2" data-aos="fade-down">
+                    <div class="accordion mt-5" id="accordionExample">
+                        <div class="card">
+                          <div class="card-header" id="headingOne" data-aos="fade-up">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                               <img src="../../../../assets/icons/truck.png" alt="">  Delivery & Payment
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample" data-aos="fade-down">
+                            <div class="card-body">
+                                Shipping charges will be calculated on checkout page for all orders below INR 1,000. Anything over and above is shipped for free
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingTwo" data-aos="fade-up">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <img src="../../../../assets/icons/returns.png"> 15 Days Easy Returns
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" data-aos="fade-down">
+                            <div class="card-body">
+                                You can request an at-home pick-up for your returns and exchanges. Simply write to care@nicobar.com or call/WhatsApp on +91 8588000150 or +91 8588000151. A return shipping fee of Rs 200 will be deducted from all orders to arrange for your pickups.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree" data-aos="fade-up">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <img src="../../../../assets/icons/more.webp"> More Information
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" data-aos="fade-down">
+                            <div class="card-body">
+                                ift Cards, Fragrances, Wellness, Toys, Fillers, Tea Lights, Wallpapers, Boxers.
+                                Please note that sale items are not eligible for returns or exchanges.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            
+        </div>
+
+        <hr>
+
+        <div class="d-flex options mt-5" >
+            <div class="option" *ngFor="let item of  myarray">
+                <img src="{{ item.img }}" alt="">
+                <h4>{{ item.title }}</h4>
+                <h6>{{ item.subTitle }}</h6>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,180 @@
+.container{
+    width: 100%;
+}
+
+.collections{
+    margin: 150px auto 100px auto;
+
+    a{
+        text-decoration: none;
+    }
+}
+
+.collect-left img{
+    width: 30rem;
+    object-fit: contain;
+}
+
+.collect-right{
+    p{
+        margin: 10px 0;
+        color: gray !important;
+        margin: 10px 0;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    h5{
+        margin: 10px 0 30px 0;
+        font-size: 14px;
+        color: gray;
+    }
+
+    .size{
+        margin-left: -45px;
+    }
+
+    .size li{
+        margin: 0 10px;
+        width: 40px;
+        height: 100%;
+        padding: 8px 5px;
+        border-radius: 50%;
+        font-weight: 400;
+        font-size: 12px;
+        text-align: center;
+        border: 1px solid #565e6a;
+        list-style: none;
+        cursor: pointer;
+        color: gray;
+    }
+
+    .size li:hover{
+        background-color: #565e6a;
+        color: white;
+        transition: ease-in-out .3s;
+    }
+
+    .sizes{
+        margin: 10px 0;
+    }
+
+}
+
+
+
+.icon{
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+
+}
+
+span{
+    color: grey;
+    margin-right: 10px;
+}
+
+.btn-design{
+    width: 15rem;
+    margin-top: 30px;
+}
+
+.options{
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.option{
+
+    width: 200px;
+    margin-top: 50px;
+
+    img{
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+    }
+
+    h4{
+        font-size: 18px;
+    }
+
+    h6{
+        font-size: 15px;
+        color: gray;
+    }
+
+}
+
+ .details li{
+        list-style: disc;
+        color: gray;
+    }
+
+.care li{
+    list-style: none;
+    color: gray;
+}
+
+.items{
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-flow: wrap;
+}
+
+.accordion{
+    max-width: 31.25rem !important;
+}
+
+.card, .card-header{
+    background-color: white !important;
+
+    button{
+        color: black !important;
+        text-decoration: none !important;
+    }
+
+    .card-body{
+        color: gray !important;
+    }
+
+    .btn-block img{
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .options{
+        flex-flow: wrap;
+    }
+
+    .option{
+        width: 50%;
+        justify-content: space-evenly;
+
+        h4{
+            font-size: 16px;
+        }
+
+        h6{
+            font-size: 13px;
+        }
+    }
+
+
+}
+
+
+@media (max-width: 600px) {
+    .toast-right-top{
+        width: 100px !important;
+    }
+}

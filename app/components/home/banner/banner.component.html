@@ -1,0 +1,15 @@
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+        <div class="carousel-item bg1 active" data-aos="fade-in"> </div>
+        <div class="carousel-item bg2" data-aos="fade-in">  </div>
+        <div class="carousel-item bg3" data-aos="fade-in">  </div>
+  </div>
+</div>
+
+<div class="features flx m-3 d-flex">
+   <div class="feature-item" *ngFor="let ary of array">
+       <img src="{{ ary.img }}" alt="">
+       <h3>{{ ary.title }}</h3>
+       <h5>{{ ary.description }}</h5>
+   </div>
+</div>

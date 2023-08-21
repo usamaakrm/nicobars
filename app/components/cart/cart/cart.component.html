@@ -1,0 +1,98 @@
+<ng-container *ngIf="product.length != 0" data-aos="fade-down" data-aos="fade-in"
+data-aos-anchor-placement="top-bottom" data-aos-offset="500" data-aos-easing="ease-in-out"
+data-aos-duration="1500">
+     <div class="card-table">
+        <h3>Shopping Cart</h3>
+         <div class="card-product">
+             <table class="table table-responsive">
+                 <thead>
+                     <tr class="flx">
+                         <th class="none">Sr.NO</th>
+                         <th>Product Name</th>
+                         <th>Product Image</th>
+                         <th>Description</th>
+                         <th>Price</th>
+                         <th>Quantity</th>
+                         <th>Total</th>
+                         <th>Action</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr *ngFor="let item of product, let i = index">
+                         <td >{{ i + 1}}</td>
+                         <td >{{ item.title }}</td>
+                         <td><img src="{{ item.img }}" alt="" class="img"></td>
+                         <td style="width: 25%;" class="description">{{ item.description }}</td>
+                         <td style="width: 12%;">{{ item.price }}</td>
+                         <td style="width: 12%;">1</td>
+                         <td style="width: 12%;">{{ item.total }}</td>
+                         <td>
+                             <button class="btn btn-design" >
+                                 <img src="../../../../assets/icons/trash-full-svgrepo-com.svg" alt="" (click)="removeItem(item)" class="icon"></button>
+                         </td>
+                     </tr>
+                     <tr>
+                         <!-- colspan skip 4 column -->
+                         <td colspan="4"></td>
+                         <td><button  class="btn btn-design" (click)="emptycart()">Empty Cart</button></td>
+                         <td><button  class="btn btn-design" routerLink="/home">Shop More</button></td>
+                         <td><button  class="btn btn-design" routerLink="/checkout">Checkout</button></td>
+                         <td><strong>Grand Total:</strong></td>
+                         <td><strong>{{ grandTotal }}</strong></td>
+                     </tr>
+                 </tbody>
+             </table>
+         </div>
+     </div>
+
+     <!--  for mobo -->
+     <div class="mobo" data-aos="fade-in"
+     data-aos-anchor-placement="top-bottom" data-aos-offset="500" data-aos-easing="ease-in-out"
+     data-aos-duration="1500">
+        <div class="mobo-card-product d-flex" 
+     *ngFor="let item of product, let i = index">
+         <div class="item1">
+            <img src="{{ item.img }}" alt="">
+         </div>
+         <div class="item2">
+            <h4>{{ item.title }}</h4>
+            <h5>{{ item.description }}</h5>
+            <h4>{{ item.price | currency:"INR" }}</h4>
+            <h5>Quantity : 1</h5>
+         </div>
+         <div class="item3">
+            <button class="btn btn-design" >
+                <img src="../../../../assets/icons/trash-full-svgrepo-com.svg" alt="" (click)="removeItem(item)" class="icon"></button>
+         </div>
+        </div>
+
+        <h4 class="order">ORDER SUMMARY</h4>
+        <div class="d-flex total">
+           <h4>TOTAL</h4>
+           <h4>{{ grandTotal }}</h4>
+        </div>
+
+        <div class="btn-items d-flex">
+            <td><button  class="btn btn-design" (click)="emptycart()">Empty Cart</button></td>
+            <td><button  class="btn btn-design" routerLink="/home">Shop More</button></td>
+            <td><button  class="btn btn-design" routerLink="/checkout">Checkout</button></td>
+        </div>
+     </div>
+     
+ </ng-container>
+
+ 
+
+<ng-container *ngIf="product.length == 0">
+    <div class="container cart-section" >
+        <div class="card-cont">
+            <h2 class="card-title">My Cart</h2>
+        </div>
+    
+        <div class="center">
+            <img src="../../../../assets/icons/empty-cart.png" alt="">
+            <h6>Add  item to it</h6>
+            <a class="btn btn-design" routerLink="/home">Shop Now</a>
+        </div>
+    </div>
+</ng-container>

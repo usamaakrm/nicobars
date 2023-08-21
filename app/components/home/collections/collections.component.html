@@ -1,0 +1,11 @@
+<section class="collection-container">
+    <h2>Recent Collections</h2>
+    <div class="collection d-flex">
+        <div class="collection-items "  *ngFor="let item of collections" data-aos="fade-down" data-aos-easing="ease-in-out">
+            <img src="{{ item.img }}" alt="">
+            <h3>{{ item.title }}</h3>
+            <h5>{{ item.subTitle }}</h5>
+            <a routerLink="/womens">Shop collection</a>
+        </div>
+    </div>
+</section>

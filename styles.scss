@@ -1,0 +1,92 @@
+@font-face{
+    font-family: myFont;
+    src:url(../src/assets/fonts/EuclidFlexRegular.ttf)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
+
+
+
+h1,h2,h3,h4,h5,h6,a,p,button,li, div, option{
+    font-family: myFont;
+    font-weight: 500;
+}
+
+$title: 'Poppins', sans-serif;
+
+.d-flex{
+    display: flex;
+}
+
+input{
+    background-color: white !important;
+}
+
+
+
+a, li, input, button, select{
+    box-shadow: none !important;
+}
+
+.btn-design{
+   background-color: black !important;
+   color: white !important;
+}
+
+.bg{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+}
+
+.center{
+    text-align: center;
+}
+// https://script.googleusercontent.com/macros/echo?user_content_key=E1IyuKU2_1EB1cDyBiXszU2a7A2a_Vs7Lk3kxnV8u-mf4qADNHOlsa1f9Eho0UQOibg5ldn0b_35UqZxldM8bpdUAKnz3IVYOJmA1Yb3SEsKFZqtv3DaNYcMrmhZHmUMWojr9NvTBuBLhyHCd5hHax0KRaiuOPlcfGq1tholpH1TG667uJ8yUwm9ahhH1qEKTk2h9cr8_BQdTMMsid48aioME4mciUDS9hfwVND-aJhUFZD95rOoxwXIuFltvcj9bVKn3MpuO19m_4qgmdpvDQ&lib=Mj_vUcW1qNigHYUQvXa4ZqN3pWMgA2apL
+a{
+    color: black !important;
+    font-weight: 500 !important;
+}
+
+
+.success, .toast-right-top, .active {
+    width: 280px !important;
+    height: 70px !important;
+    position: relative;
+
+    p{
+    font-size: 12px !important;
+    margin-left: 20px;
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: transparent; 
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+    background-color: rgb(207, 207, 207);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+    background-color: grey;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(86, 86, 86);
+}
+

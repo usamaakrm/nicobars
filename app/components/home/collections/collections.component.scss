@@ -1,0 +1,68 @@
+
+.collection-container{
+    padding: 30px;
+    background-color: #f8f4eaa7;
+}
+
+// background-color: #d2d0cba2;
+
+.collection-container h2{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 20px 0 40px 0;
+}
+
+.collection-items img{
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.collection-items h3{
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 15px;
+}
+
+.collection-items h5{
+    width: 270px;
+    font-size: 15px;
+    color: rgb(62, 62, 62);
+    margin: 20px 0;
+}
+
+.collection{
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.collection-container a{
+    color: #233142;
+}
+
+@media (max-width:600px) {
+
+    .collection-container {
+        margin: auto;
+        justify-content: center;
+    }
+    .collection-container h2{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .collection{
+        margin: auto;
+        justify-content: center;
+    }
+
+    .collection-items{
+        margin: 20px auto;
+
+        h5{
+            margin: 10px 0;
+        }
+    }
+}

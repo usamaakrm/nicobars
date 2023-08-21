@@ -1,0 +1,391 @@
+.products{
+    padding: 30px;
+}
+
+
+.products h2{
+   font-size: 50px;
+   font-family: 'Cormorant Garamond', serif;
+   margin-left: 80px;
+}
+
+.filter-product{
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin: 40px;
+    overflow-y: hidden !important;
+}
+.item h4{
+    padding: 10px 20px;
+    border: 2px solid rgb(42, 42, 42);
+    color: rgb(42, 42, 42);
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.item h4:hover, .actives{
+    background-color: rgb(42, 42, 42);
+    color: white !important;
+}
+
+.row{
+    justify-content: space-evenly !important;
+
+}
+
+.cards{
+    width: 300px;
+    height: 400px;
+    margin: 20px 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-item{
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly !important;
+    align-items: center;
+}
+
+.cards p, .cards h5{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cards h5{
+     font-size: 18px;
+}
+
+.cards p{
+    font-size: 14px;
+    color: grey;
+}
+
+.cards h6{
+    font-weight: 500;
+}
+
+.img-card{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.cards img{
+    width: 100%;
+    height:auto;
+    object-fit: contain;
+    transition: .3s ease-in-out;
+}
+
+.add-to-cart{
+    justify-content: space-between;
+}
+
+.add-to-cart img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-top: -10px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.cards img:hover{
+    transition: .3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.shop-1{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.155),rgba(0, 0, 0, 0.189)), url(../../../../assets/bg/FF.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    color: white !important;
+    text-align: center;
+}
+
+.shop-1 h3{
+    padding-top: 10rem;
+    font-size: 3.8rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.shop-1 h4{
+    font-size: 20px;
+    font-family: myFont;
+}
+.shop-1 img, .shop-3 img{
+    // width: 100%;
+    // object-fit: cover;
+    // height: 40%;
+    display: none;
+}
+
+.btn-items{
+    justify-content: center;
+}
+
+.btn-items button, .shop-3 button{
+    margin: 20px;
+    border: none;
+    padding: 10px 30px;
+    font-weight: 500;
+    background-color: white;
+}
+
+//  shop 2
+
+.shop-2{
+    text-align: center;
+    padding: 50px;
+    background-color: #eae5d7;
+}
+
+.shop-2 h3, .shop-3 h3, .shop-4 h3{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    margin: 20px;
+}
+
+.shop-2 p, .shop-3 p{
+    word-wrap: normal;
+    font-family: myFont;
+}
+
+.shop-3{
+    background-color: white;
+    text-align: center;
+    padding: 50px 30px;
+
+    p{
+        padding-right: 20px;
+    }
+}
+
+.shop-3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.176),rgba(0, 0, 0, 0.267)), url(../../../../assets/bg/ww.jpeg);
+    text-align: right;
+    color: white;
+    padding: 50px;
+    height: 70vh;
+}
+
+.shop-3 button:hover{
+    color: black;
+}
+
+.shop-3 h3{
+    margin-top: 150px;
+}
+
+.shop-4{
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.shop-4 h3{
+    margin-bottom: 60px;
+}
+
+.decors h4{
+    margin-top: 15px;
+}
+.docor-item{
+    justify-content: space-around;
+}
+
+.decor-card img{
+    width: 250px;
+    object-fit: contain;
+}
+
+.decors{
+    justify-content: space-between;
+}
+
+.decors h4{
+    font-size: 18px;
+    margin: 10px 10px 50px 10px;
+
+}
+.decors h4, .decors a{
+    color: black;
+    margin: 5px 10px;
+}
+
+.shop-5{
+    background-image: url(../../../../assets/bg/JW.jpeg);
+    color: white;
+    padding: 50px 30px;
+}
+
+.shop-5 h3{
+    margin-top: 150px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+}
+
+.active{
+    color: white !important;
+}
+
+@media (max-width:600px){
+    .products{
+        padding: 30px 5px;
+    }
+
+    .cart-top{
+        padding: 20px 5px;
+    }
+
+    h2{
+        font-size: 30px !important;
+        margin-left: 15px !important;
+     }
+
+     .filter-product{
+        margin: 5px;
+        flex-flow: row;
+        justify-content: start;
+        overflow-x: scroll;
+        overflow-y: hidden !important;
+    }
+
+    .item{
+        margin: 10px 5px;
+        z-index: 100;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .row{
+        justify-content: space-evenly !important;
+    }
+
+
+    .cards{
+    width: 45%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    }
+
+    .card-item{
+    justify-content: center !important;
+    align-items: center;
+    width: 100%;
+
+   .cards img{
+    width: 50%;
+    height:auto;
+    object-fit: contain;
+    transition: .3s ease-in-out;
+    }
+
+}
+
+.img-card{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+
+    img{
+   width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: fill;
+    object-position: center !important;
+
+    }
+   }
+
+.description{
+    font-size: 12px !important;
+ }
+
+ h5{
+    font-size: 18px !important;
+   }
+
+   h6{
+    font-size: 12px;
+   }
+
+
+//     shop section
+
+.shop-1{
+    background-position: left;
+    height: 70vh;
+
+   h3{
+       padding-top: 10rem;
+       font-size: 3.5rem;
+   }
+
+   h4{
+    font-size: .8rem;
+   }
+}  
+
+.btn-items button, .shop-3 button{
+    border: none;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: white;
+}
+
+//  shop 2
+.shop-2{
+    text-align: center;
+    padding: 20px;
+}
+
+.shop-2 h3, .shop-3 h3, .shop-4 h3{    
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+//   shop 3
+
+.shop-3{
+    background-position: center;
+}
+
+.shop-3 h3{
+    margin-top: 220px;
+    font-weight: 500;
+}
+
+//  shop 4
+
+.docor-item{
+    flex-direction: column;
+}
+
+.decors{
+    justify-content: space-around;
+}
+
+.center h3{
+    margin-bottom: 20px;
+}
+
+.decors h4{
+    margin-bottom: 20px !important;
+}
+
+.decor-card{
+    margin: 10px auto;
+}
+}
